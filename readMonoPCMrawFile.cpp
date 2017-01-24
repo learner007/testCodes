@@ -11,7 +11,6 @@ int main() {
 
 
 // read in_buf from test file
-// Note: The input files must be in 16bit, stereo, 48000 Hz, raw(PCM) format
   FILE *in_buffer_file;
   in_buffer_file = fopen("test.raw", "r+b");
 
