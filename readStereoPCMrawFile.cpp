@@ -32,7 +32,7 @@ int main() {
 // test if file is read correctly
   FILE * filetmp = fopen("test.txt", "w");
 
-  for (int k = 0; k <= 2*900; k = (k+2) ) { // MUST start from k = 0
+  for (int k = 0; k < 2*900; k = (k+2) ) { // MUST start from k = 0
     if ( (k & 1) == 0) { // true if even; checks if last binary digit is zero
       fprintf(filetmp, "\n Left buffer[%d] = %d %04x %f Right buffer[%d] = %d %04x %f", k, buffer[k], buffer[k], float(buffer[k])/32768, k+1, buffer[k+1],  buffer[k+1], float(buffer[k+1])/32768);
     }
