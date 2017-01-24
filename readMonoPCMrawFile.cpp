@@ -33,7 +33,7 @@ int main() {
   FILE * filetmp = fopen("test.txt", "w");
 
   for (int k = 0; k <= N; k++) { // MUST start from k = 0
-    fprintf(filetmp, "\n buffer[%d] = %d %f", k, buffer[k], float(buffer[k])/32768);  //16bit amplitude max value=2^(16-1)
+    fprintf(filetmp, "\n buffer[%d] = %d %04x %f", k, buffer[k], buffer[k], float(buffer[k])/32768);  //16bit amplitude max value=2^(16-1)
   }
 
 }
